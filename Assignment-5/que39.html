@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <input type="text" id="txt" placeholder="Enter something">
+    <button onclick="checkDataType()">Check</button>
+
+    <script>
+        function checkDataType()
+         {
+            var value = document.getElementById("txt").value;
+            if (isNaN(value)) 
+            {
+                console.log("String");
+            } else {
+                console.log("Number");
+            }
+        }
+    </script>
+
+</body>
+</html>

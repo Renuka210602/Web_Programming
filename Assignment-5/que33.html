@@ -1,0 +1,28 @@
+<p id="hoverParagraph" onmouseover="changeContent()" onmouseout="restoreContent()">Lorem ipsum dolor, sit amet consectetur 
+    adipisicing elit. Impedit a esse alias accusamus nulla modi sunt, labore officia placeat animi ipsa nihil natus aliquid quia odit
+     iusto facere magnam ducimus
+    </p>
+    <script>
+        function changeContent() 
+        {
+            document.getElementById("hoverParagraph").innerHTML = "Welcome to CDAC Nashik.";
+        }
+
+        function restoreContent() 
+        {
+            document.getElementById("hoverParagraph").innerHTML = "Hello Good Morning";
+        }
+    </script>
+
+<style>
+    p :hover{
+         color: blue;
+    }
+    
+        #hoverParagraph {
+            font-size: 18px;
+            color: gray;
+            transition: all 0.3s ease;
+        }
+ 
+</style>

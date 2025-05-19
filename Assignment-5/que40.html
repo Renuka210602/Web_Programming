@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validation</title>
+    <script>
+        function validateTextbox() {
+            let text = document.getElementById("txt");
+            let value = text.value.trim();
+
+            if (value === "") {
+                text.style.border = "2px solid red";
+            } else {
+                text.style.border = "";  
+                console.log("Textbox value:", value);
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <h3>Enter something:</h3>
+    <input type="text" id="txt" placeholder="Type here" />
+    <button onclick="validateTextbox()">Submit</button>
+
+</body>
+</html>
